@@ -9,11 +9,21 @@
 
 <body style="background-color:lightgray;">
 
-     
-     <audio autoplay>
-          
-          src="hbd.mp3" type:audio/mp3">
-     </audio>
+     <p> Paki Click muna hehe</p>
+     <img id="playButton" src="Play.jpg" alt="Play Music" onclick="playMusic()">
+<audio id="audioPlayer" src="hbd.mp3"></audio>
+
+<script>
+  var audio = document.getElementById("audioPlayer");
+
+  function playMusic() {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+</script>
      
 <center>
 
